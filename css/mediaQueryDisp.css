@@ -1,0 +1,142 @@
+/************************************************************************************/
+/*                           Media query 992px                                      */
+/************************************************************************************/
+/* En este media query se oculto el navbar completo y se uso un dropdown sin bootstrap
+   La mayoria de los componentes ya fueron definidos en la query de pc  */
+
+
+@media only screen and (max-width: 992px) {
+    /********************************************************/
+   /*    Grid container Paginas General CSS                 */
+   /********************************************************/     
+   .grid_general {
+       display: grid;
+        grid-template-areas:
+         'grid_header grid_header'
+         'topnav_drop topnav_drop'
+         'grid_main  grid_main'
+         'grid_footer grid_footer';
+       grid-gap: 0px;
+       width: 100%;
+     }
+    
+   .topnav_drop { 
+    grid-area: topnav_drop; 
+    display: initial;
+    background-color: rgb(57, 62, 70);    
+}
+ 
+    /********************************************************/
+   /*    Grid container Recetas CSS                        */
+   /********************************************************/  
+       .grid_recipe {
+           display: grid;
+            grid-template-areas:
+            'grid_rec_header grid_rec_header' 
+            'topnav_drop topnav_drop' 
+            'grid_top_rec  grid_top_rec'
+            'recipe1  recipe_img1'  
+            'recipe2  recipe_img2'
+            'recipe3  recipe_img3'
+            'recipe4  recipe_img4'
+            'recipe5  recipe_img5'
+            'recipe6  recipe_img6'
+            'footer_rec  footer_rec';
+           grid-gap: 0px;
+           width: 100%;
+         }
+       
+   /********************************************************/
+   /*     Esto es para ocultar el navBar de la version PC  */
+   /********************************************************/ 
+       .topnav{
+           display: none;
+       }
+       .dropdown {
+           float: left;
+           overflow: hidden;
+         }
+         .dropdown .dropbtn {
+           font-size: 16px;  
+           border: 1px solid black;
+           outline: none;
+           color: black;
+           padding: 10px 16px;
+           font-family: inherit;
+           margin: 0;
+         }
+       .dropdown-content {
+       display: none;
+       position: absolute;
+       background-color: rgb(57, 62, 70);
+       min-width: 160px;
+       }
+   
+       .dropdown-content a {
+     float: none;
+     color: black;
+     padding: 12px 16px;
+     text-decoration: none;
+     display: block;
+     text-align: left;
+       }
+   
+       .dropdown:hover .dropdown-content {
+     display: block;
+       }
+        
+   }
+   
+/************************************************************************************************/
+/*                                  Media query 600px                                           */
+/************************************************************************************************/
+/* En este Query si se modifico la posicion de los componentes del grid para que sea responsive*/
+
+   @media only screen and (max-width: 600px) {
+    /********************************************************/
+    /*    Grid container Paginas General CSS                 */
+    /********************************************************/     
+    .grid_general {
+       display: grid;
+        grid-template-areas:
+         'grid_header'
+         'topnav_drop'
+         'grid_main'
+         'grid_footer';
+       grid-gap: 0px;
+       width: 100%;
+     }
+         
+    .topnav_drop { 
+        grid-area: topnav_drop; 
+        display: initial;
+        background-color: rgb(57, 62, 70);    
+    }
+
+       /********************************************************/
+    /*    Grid container Recetas CSS                        */
+    /********************************************************/  
+       .grid_recipe {
+           display: grid;
+           grid-template-areas:
+            'grid_rec_header' 
+            'topnav_drop'  
+            'grid_top_rec'
+            'recipe1'  
+            'recipe_img1'  
+            'recipe2'
+           'recipe_img2'
+            'recipe3'
+            'recipe_img3'
+            'recipe4'
+            ' recipe_img4'
+            'recipe5' 
+             'recipe_img5'
+            'recipe6'
+           'recipe_img6'
+            'footer_rec' ;
+           grid-gap: 0px;
+           width: 100%;
+       }
+   }
+   

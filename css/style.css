@@ -1,0 +1,117 @@
+*{
+    font-family: 'IBM Plex Sans KR', sans-serif;
+ }
+
+  /*Sin esto el grid de la pagina no cubre el 100*/
+ html, body {  
+   margin:0px;  
+   height:100%;  
+ }  
+
+
+ body {
+    background-color: rgb(238, 238, 238);
+ }
+  
+   /*Esto oculta el navBar del query de dispositivo (sin bootstrap)*/
+ .topnav_drop{
+    display: none;
+ }
+ 
+
+/*Para quitar el subrayado de los links*/
+a:link, a:visited, a:active {
+   text-decoration:none;
+}
+
+ /******************************************************************/
+ /*           Animaciones de botones e imagenes                    */
+ /******************************************************************/
+ .button {
+    color: rgb(57, 62, 70);
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    background: white;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 12px 35px;
+    font-size: 14px;
+ }
+ .button:hover {
+    background: rgb(0, 173, 181);
+    color: white;
+ }
+ .button:active{
+    background: white;
+    color: rgb(57, 62, 70);
+ }
+ body > div > div.topnav_drop > div > button{
+     color: rgb(57, 62, 70);
+ }
+ body > div > div.topnav_drop > div > button:hover{
+    color: white;
+}
+
+ .img_rec {
+    border-radius: 20px;
+    border: solid 3px transparent;
+    margin: -3px;
+}
+.img_rec:hover {
+    border: solid 3px rgb(0, 173, 181);
+    box-shadow: 0px 0px 8px 1px rgba(0, 173, 181,0.59);
+}
+
+/* Para darle color a los i del footer sin romper al de los botones */
+ body > div > div.grid_footer > a> i,body > div > div.footer_rec > a>i{
+    color: white;
+}
+
+/******************************************************************/
+ /*  Otras propiedades adicionales (margen, alineado, bordes,etc   */
+ /******************************************************************/
+.textcenter {
+   text-align: center;
+}
+.list{
+   text-align: left;
+   display:inline-block;
+}
+.center {
+   margin-left: auto;
+   margin-right: auto;
+ }
+ 
+ .imgCenter{
+    display:block;
+    margin:auto;
+    }
+.imgRadius{
+    border-radius: 20px;
+}
+body > div > div.grid_main > div > div > a > p{
+color: black
+}
+
+ /********************************************************/
+/*Flex-Box Usado en las pag contacto.html y recetas.html */
+/********************************************************/     
+    .mainContainer {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: auto;
+        align-content: start
+      }
+     .Container {
+        font-weight: bold;
+        font-size: medium;
+        flex: 0 0 auto;
+        margin: 10px;
+      }
+
+
+ 
